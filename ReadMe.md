@@ -1,9 +1,9 @@
 # **C#SDK**
 - **概览** 
-- 支持NET版本：4.5 以上 代码编码格式：utf-8。
-- 引入方式：直接将SDK中的Submaill.dll和Newtonsoft.Json.dll导入
+- 支持NET版本：.NET Standard 2.0 代码编码格式：utf-8。
+- 引入方式：直接将SDK中的Submaill.dll引入
 - **依赖**
-- 依赖第三方库Newtonsoft.Json.dll
+- System.Text.Json
 
 ---
 
