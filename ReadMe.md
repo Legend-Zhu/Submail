@@ -71,31 +71,29 @@
 ##### SDK CLASS索引
 	    
 ```
-		AddressBookMail.cs     邮件地址薄，订阅和添加联系人到目标地薄 
-		AddressBookMessage.cs  短信地址薄，订阅和添加联系人到目标地薄
-		ISender.cs		   	   发送接口	
-		SendBase.cs		       Message Send 和Mail Send的基类
-		Mail.cs		  	       邮件API	
-		Message.cs		   	   短信API
-		Voice                  语音API
-		InterbationalSms       国际短信API
-		MailSend.cs		   	   mail/send
-		MailXSend.cs	   	   mail/xsend	
-		MessageSend            message/send
-		MessageXSend.cs	   	   message/xsend
-		MessageMultiSend.cs    message/multi-xsend
-		MessageLog             短信日志API
-		MessageTemplate        短信模板操作
-		VoiceSend.cs	       voice/send
-		VoiceXsend.cs          voice/xsend
-		VoiceMutilXSend        voice/mutilxsend
-		VoiceVerify            语音验证码
-		InternationalsmsXSend  internationalsms/xsend
-		InternationalsmsSend   internationalsms/send
-		InternationalsmsMultiXSend internationalsms/multixsend  
-```
-
-		
+	AddressBookMail.cs     邮件地址薄，订阅和添加联系人到目标地薄 
+	AddressBookMessage.cs  短信地址薄，订阅和添加联系人到目标地薄
+	ISender.cs		   	   发送接口	
+	SendBase.cs		       Message Send 和Mail Send的基类
+	Mail.cs		  	       邮件API	
+	Message.cs		   	   短信API
+	Voice                  语音API
+	InterbationalSms       国际短信API
+	MailSend.cs		   	   mail/send
+	MailXSend.cs	   	   mail/xsend	
+	MessageSend            message/send
+	MessageXSend.cs	   	   message/xsend
+	MessageMultiSend.cs    message/multi-xsend
+	MessageLog             短信日志API
+	MessageTemplate        短信模板操作
+	VoiceSend.cs	       voice/send
+	VoiceXsend.cs          voice/xsend
+	VoiceMutilXSend        voice/mutilxsend
+	VoiceVerify            语音验证码
+	InternationalsmsXSend  internationalsms/xsend
+	InternationalsmsSend   internationalsms/send
+	InternationalsmsMultiXSend internationalsms/multixsend  
+```		
 
 ---
 		
