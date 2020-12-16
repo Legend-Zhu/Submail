@@ -1,0 +1,17 @@
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\bin\Release\netstandard2.0\Submail.deps.json
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\bin\Release\netstandard2.0\Submail.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\bin\Release\netstandard2.0\Submail.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\obj\Release\netstandard2.0\Submail.csprojAssemblyReference.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\obj\Release\netstandard2.0\Submail.AssemblyInfoInputs.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\obj\Release\netstandard2.0\Submail.AssemblyInfo.cs
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\obj\Release\netstandard2.0\Submail.csproj.CoreCompileInputs.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\obj\Release\netstandard2.0\Submail.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master\Submail\obj\Release\netstandard2.0\Submail.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\bin\Release\netstandard2.0\Submail.deps.json
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\bin\Release\netstandard2.0\Submail.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\bin\Release\netstandard2.0\Submail.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\obj\Release\netstandard2.0\Submail.AssemblyInfoInputs.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\obj\Release\netstandard2.0\Submail.AssemblyInfo.cs
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\obj\Release\netstandard2.0\Submail.csproj.CoreCompileInputs.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\obj\Release\netstandard2.0\Submail.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\Submail\obj\Release\netstandard2.0\Submail.pdb

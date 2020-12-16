@@ -1,0 +1,39 @@
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\bin\Release\SubMailTest.exe.config
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\bin\Release\SubMailTest.exe
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\bin\Release\SubMailTest.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\bin\Release\Submail.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\bin\Release\Newtonsoft.Json.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\bin\Release\Submail.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\obj\Release\SubMailTest.csprojAssemblyReference.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\obj\Release\SubMailTest.csproj.CoreCompileInputs.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\obj\Release\SubMailTest.csproj.CopyComplete
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\obj\Release\SubMailTest.exe
+D:\资源\SUBMAIL_C_SHARP_SDK-master\SubMailTest\obj\Release\SubMailTest.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\SubMailTest.exe.config
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\SubMailTest.exe
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\SubMailTest.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\Submail.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\Submail.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\obj\Release\SubMailTest.csprojAssemblyReference.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\obj\Release\SubMailTest.csproj.CoreCompileInputs.cache
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\obj\Release\SubMailTest.csproj.CopyComplete
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\obj\Release\SubMailTest.exe
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\obj\Release\SubMailTest.pdb
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Buffers.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Memory.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Numerics.Vectors.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Text.Encodings.Web.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Text.Json.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.ValueTuple.dll
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Buffers.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Memory.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Numerics.Vectors.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Text.Encodings.Web.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Text.Json.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\资源\SUBMAIL_C_SHARP_SDK-master - 副本\SubMailTest\bin\Release\System.ValueTuple.xml
