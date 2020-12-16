@@ -128,23 +128,23 @@ Send（） | 发送邮件
 
 ```
 使用 MailSend 类提交 mail/send 发送一封简单的邮件
-MailAppConfig("AppID", "AppKey");
-MailSend submail = new MailSend(mailConfig);
-submail.AddTo("youremail@XXX.com", "yourname");
-submail.AddCc("leo@submail.cn", "leo");
-submail.AddBcc("leo@submail.cn", "leo");
-submail.SetSender("leo@inside.submail.me", "leo");
-submail.SetReply("service@submail.cn");
-submail.SetSubject("发送历史与明细");
-submail.SetText("发送历史与明细");
-submail.AddAttachment(@"C:\attachment.txt");
-submail.AddTag("XXX");
+	MailAppConfig("AppID", "AppKey");
+	MailSend submail = new MailSend(mailConfig);
+	submail.AddTo("youremail@XXX.com", "yourname");
+	submail.AddCc("leo@submail.cn", "leo");
+	submail.AddBcc("leo@submail.cn", "leo");
+	submail.SetSender("leo@inside.submail.me", "leo");
+	submail.SetReply("service@submail.cn");
+	submail.SetSubject("发送历史与明细");
+	submail.SetText("发送历史与明细");
+	submail.AddAttachment(@"C:\attachment.txt");
+	submail.AddTag("XXX");
 
-string resultMessage = string.Empty 
-if (submail.Send(out resultMessage)== false)
-{
-   Console.WriteLine(resultMessage); 
-}
+	string resultMessage = string.Empty 
+	if (submail.Send(out resultMessage)== false)
+	{
+		Console.WriteLine(resultMessage); 
+	}
 
 ```
 
@@ -152,7 +152,7 @@ if (submail.Send(out resultMessage)== false)
 
 #### MailXSend
 -  IAppConfig mailConfig = new MailAppConfig("AppID","AppKey");
-- MailXSend submail = new MailXSend(mailConfig);<br/>
+-  MailXSend submail = new MailXSend(mailConfig);<br/>
 
 **使用指引:**
 
