@@ -47,20 +47,20 @@
 		SignatureHelper.cs       处理请求数据
 		
 	SubMailTest:
-	    AddressBookMailDemo.cs	    邮件地址薄测试程序
-	    AddressBookMessageDemo.cs	短信地址薄测试程序
-	    MailSendDemo.cs			    邮件send测试程序
-	    MailSendXDemo.cs			邮件XSend测试程序
-	    MessageMultiXSendDemo.cs	短信多方发送测试程序
-	    MessageSendXDemo.cs		    短信XSend发送测试程序
-	    MessageSendDemo             短信send发送测试程序
-	    MessageLogDemo              短信日志查询测试程序
-	    MessageTemplateDemo         短信模板操作测试程序
-	    VoiceSendDemo.cs			语音send测试程序
-	    VoiceXSendDemo.cs           语音Xsend发送测试程序
-	    VoiceMutilXSendDemo.cs      语音群发测试程序
-	    VoiceVerifyDemo.cs          语音验证码测试程序
-	    InternationalsmsXSendDemo.cs 国际短信Xsend发送测试程序
+	    	AddressBookMailDemo.cs	    邮件地址薄测试程序
+	    	AddressBookMessageDemo.cs	短信地址薄测试程序
+	    	MailSendDemo.cs			    邮件send测试程序
+	    	MailSendXDemo.cs			邮件XSend测试程序
+	    	MessageMultiXSendDemo.cs	短信多方发送测试程序
+	    	MessageSendXDemo.cs		    短信XSend发送测试程序
+	    	MessageSendDemo             短信send发送测试程序
+	   	MessageLogDemo              短信日志查询测试程序
+	    	MessageTemplateDemo         短信模板操作测试程序
+	    	VoiceSendDemo.cs			语音send测试程序
+	    	VoiceXSendDemo.cs           语音Xsend发送测试程序
+	    	VoiceMutilXSendDemo.cs      语音群发测试程序
+	    	VoiceVerifyDemo.cs          语音验证码测试程序
+	    	InternationalsmsXSendDemo.cs 国际短信Xsend发送测试程序
 		InternationalsmsSendDemo.cs  国际短信send发送测试程序
 		InternationalsmsMultiXSendDemo.cs 国际短信群发测试程序
 		
@@ -102,7 +102,7 @@
 #### MailSend 类
 ##### 初始化: 
 -  IAppConfig mailConfig = new MailAppConfig("AppID","AppKey");
-- MailSend submail = new MailSend(mailConfig);<br/>
+-  MailSend submail = new MailSend(mailConfig);<br/>
 
 **使用指引:**
 
@@ -179,19 +179,19 @@ XSend | 发送邮件
 ```
 使用 MAILXsend 类提交 mail/xsend 发送一封邮件。
 
-           IAppConfig mailConfig = new MailAppConfig("AppId", "AppKey");
-            MailXSend submail = new MailXSend(mailConfig);
-            submail.AddTo("youremail@mail.com", "yourname");
-            submail.SetSender("leo@inside.submail.me", "leo");
-            submail.SetProject("7pfhZ3");
-            submail.AddHeaders("X-Accept", "zh-cn");
-            submail.AddHeaders("X-Mailer", "leo App");
-            submail.AddTag("XXX");
-            string resultMessge = string.Empty;
-            if(submail.XSend(out resultMessge) == false)
-            {
-   Console.WriteLine(resultMessge);
-            } 
+	IAppConfig mailConfig = new MailAppConfig("AppId", "AppKey");
+	MailXSend submail = new MailXSend(mailConfig);
+	submail.AddTo("youremail@mail.com", "yourname");
+	submail.SetSender("leo@inside.submail.me", "leo");
+	submail.SetProject("7pfhZ3");
+	submail.AddHeaders("X-Accept", "zh-cn");
+	submail.AddHeaders("X-Mailer", "leo App");
+	submail.AddTag("XXX");
+	string resultMessge = string.Empty;
+	if(submail.XSend(out resultMessge) == false)
+	{
+		Console.WriteLine(resultMessge);
+	} 
 
 
 ```
@@ -200,7 +200,7 @@ XSend | 发送邮件
 
 #### MessageSend 类
 -  IAppConfig messageConfig = new MessageConfig("AppID","AppKey");
-- MessageSend submail = new MessageSend(messageConfig);<br/>
+-  MessageSend submail = new MessageSend(messageConfig);<br/>
 
 **使用指引:**
 
@@ -215,24 +215,24 @@ Send | 发送短信
 **代码示列：**
 
 ```
-   IAppConfig appConfig = new MessageConfig("appid", "appkey");
-            MessageSend messageSend = new MessageSend(appConfig);
-            messageSend.AddTo("telephone_number");
-            messageSend.AddContent("【SUBMAIL】你好，你的验证码是：38385");
-            messageSend.AddTag("XXXX");
-            string returnMessage = string.Empty;
-            if (messageSend.Send(out returnMessage) == true)
-            {
-                Console.WriteLine("发送成功");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("发送失败");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
+	IAppConfig appConfig = new MessageConfig("appid", "appkey");
+	MessageSend messageSend = new MessageSend(appConfig);
+	messageSend.AddTo("telephone_number");
+	messageSend.AddContent("【SUBMAIL】你好，你的验证码是：38385");
+	messageSend.AddTag("XXXX");
+	string returnMessage = string.Empty;
+	if (messageSend.Send(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
 
 ```
 
@@ -240,7 +240,7 @@ Send | 发送短信
 
 #### MessageXSend 类
 -  IAppConfig messageConfig = new MessageConfig("AppID","AppKey");
-- MessageXSend submail = new MessageXSend(messageConfig);<br/>
+-  MessageXSend submail = new MessageXSend(messageConfig);<br/>
 
 **使用指引:**
 
@@ -256,26 +256,26 @@ XSend | 发送短信
 **代码示列：**
 
 ```
-     IAppConfig appConfig = new MessageConfig("appid", "appkey", SignType.sha1);
-            MessageXSend messageXSend = new MessageXSend(appConfig);
-            messageXSend.AddTo("telephone_number");
-            messageXSend.SetProject("w3nla3");
-            messageXSend.AddVar("code", "1111");
-            messageXSend.AddVar("minue", "3359");
-            messageXsend.AddTag("XXX");
-            string returnMessage = string.Empty;
-            if (messageXSend.XSend(out returnMessage) == true)
-            {
-                Console.WriteLine("发送成功");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("发送失败");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
+	IAppConfig appConfig = new MessageConfig("appid", "appkey", SignType.sha1);
+	MessageXSend messageXSend = new MessageXSend(appConfig);
+	messageXSend.AddTo("telephone_number");
+	messageXSend.SetProject("w3nla3");
+	messageXSend.AddVar("code", "1111");
+	messageXSend.AddVar("minue", "3359");
+	messageXsend.AddTag("XXX");
+	string returnMessage = string.Empty;
+	if (messageXSend.XSend(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
 
 ```
 
@@ -283,7 +283,7 @@ XSend | 发送短信
 
 #### MessageMutilXSend 类
 -  IAppConfig messageConfig = new MessageConfig("AppID","AppKey");
-- MessageMutilXSend submail = new MessageMutilXSend(messageConfig);
+-  MessageMutilXSend submail = new MessageMutilXSend(messageConfig);
 
 **使用指引:**
 
@@ -298,33 +298,33 @@ MultiXSend| 发送短信
 **代码示列：**
 
 ```
-      IAppConfig appConfig = new MessageConfig("appid", "appkey");
-            MessageMultiXSend messageMultiSend = new MessageMultiXSend(appConfig);
-            messageMultiSend.SetProject("w3nla3");
-            messageMultiSend.AddTag("XXXX");
+	IAppConfig appConfig = new MessageConfig("appid", "appkey");
+	MessageMultiXSend messageMultiSend = new MessageMultiXSend(appConfig);
+	messageMultiSend.SetProject("w3nla3");
+	messageMultiSend.AddTag("XXXX");
 
-            Dictionary<string, string> vars = new Dictionary<string, string>();
-            vars.Add("code", "123456777");
-            vars.Add("minue","18");
-            messageMultiSend.SetMulti(new List<MultiMessageItem>() {
-                new MultiMessageItem() { to="telephone_number",vars=vars},
-                new MultiMessageItem() { to="telephone_number", vars = vars}
-            });
+	Dictionary<string, string> vars = new Dictionary<string, string>();
+	vars.Add("code", "123456777");
+	vars.Add("minue","18");
+	messageMultiSend.SetMulti(new List<MultiMessageItem>() {
+		new MultiMessageItem() { to="telephone_number",vars=vars},
+		new MultiMessageItem() { to="telephone_number", vars = vars}
+	});
 
-            string returnMessage = string.Empty;
+	string returnMessage = string.Empty;
            
-                if (messageMultiSend.MultiXSend(out returnMessage)== true)
-                {
-                    Console.WriteLine("发送成功");
-                    Console.WriteLine(returnMessage);
-                    Console.ReadKey();
-                }
-                else
-                {
-                    Console.WriteLine("发送失败");
-                    Console.WriteLine(returnMessage);
-                    Console.ReadKey();
-                }
+	if (messageMultiSend.MultiXSend(out returnMessage)== true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
 
 ```
 
@@ -333,7 +333,7 @@ MultiXSend| 发送短信
 
 #### MessageTemplate 类
 -  IAppConfig messageConfig = new MessageConfig("AppID","AppKey");
-- MessageTemplate submail = new MessageTemplate(messageConfig);
+-  MessageTemplate submail = new MessageTemplate(messageConfig);
 
 **使用指引:**
 
@@ -358,50 +358,49 @@ Post()	 | 提交一个新的模板
 **代码示列：**
 
 ```
-     IAppConfig appConfig = new MessageConfig("appid","appkey",SignType.sha1);
-            MessageTemplate messageTemplate = new MessageTemplate(appConfig);
+	IAppConfig appConfig = new MessageConfig("appid","appkey",SignType.sha1);
+	MessageTemplate messageTemplate = new MessageTemplate(appConfig);
 
-            //get
-            //messageTemplate.AddTemplateId("w3nla3");
-            //string returnMessage = string.Empty;
-            //returnMessage = messageTemplate.Get(out returnMessage);
-            //Console.WriteLine("接口返回消息：" + returnMessage);
-            //Console.ReadKey();
+	//get
+	//messageTemplate.AddTemplateId("w3nla3");
+	//string returnMessage = string.Empty;
+	//returnMessage = messageTemplate.Get(out returnMessage);
+	//Console.WriteLine("接口返回消息：" + returnMessage);
+	//Console.ReadKey();
 
-            //put
-            //messageTemplate.PutTemplateId("9qvwv2");
-            //messageTemplate.PutSmsTitle("上海赛邮");
-            //messageTemplate.PutSmsContent("你好，你的验证码是：11122233");
-            //messageTemplate.PutSmSSignature("【SUBMAIL】");
-            //string returnMessage = string.Empty;
-            //returnMessage = messageTemplate.Put(out returnMessage);
-            //Console.WriteLine("接口返回消息：" + returnMessage);
-            //Console.ReadKey();
+	//put
+	//messageTemplate.PutTemplateId("9qvwv2");
+	//messageTemplate.PutSmsTitle("上海赛邮");
+	//messageTemplate.PutSmsContent("你好，你的验证码是：11122233");
+	//messageTemplate.PutSmSSignature("【SUBMAIL】");
+	//string returnMessage = string.Empty;
+	//returnMessage = messageTemplate.Put(out returnMessage);
+	//Console.WriteLine("接口返回消息：" + returnMessage);
+	//Console.ReadKey();
 
+	//del
+	//messageTemplate.delTemplateId("9qvwv2");
+	//string returnMessage = string.Empty;
+	//returnMessage = messageTemplate.Delete(out returnMessage);
+	//Console.WriteLine("接口返回消息：" + returnMessage);
+	//Console.ReadKey();
 
-            //del
-            //messageTemplate.delTemplateId("9qvwv2");
-            //string returnMessage = string.Empty;
-            //returnMessage = messageTemplate.Delete(out returnMessage);
-            //Console.WriteLine("接口返回消息：" + returnMessage);
-            //Console.ReadKey();
-
-            //post
-            messageTemplate.PostSmsTitle("张杨你好");
-            messageTemplate.PostSmsContent("你好，你的验证码是：110114");
-            messageTemplate.PostSmSSignature("【SUBMAIL】");
-            string returnMessage = string.Empty;
-            returnMessage = messageTemplate.Post(out returnMessage);
-            Console.WriteLine("接口返回消息：" + returnMessage);
-            Console.ReadKey();
-
+	//post
+	messageTemplate.PostSmsTitle("张杨你好");
+	messageTemplate.PostSmsContent("你好，你的验证码是：110114");
+	messageTemplate.PostSmSSignature("【SUBMAIL】");
+	string returnMessage = string.Empty;
+	returnMessage = messageTemplate.Post(out returnMessage);
+	Console.WriteLine("接口返回消息：" + returnMessage);
+	Console.ReadKey();
+	
 ```
 
 ---
 
 #### MessageLog类
 -  IAppConfig messageConfig = new MessageConfig("AppID","AppKey");
-- MessageLog submail = new MessageLog(messageConfig);
+-  MessageLog submail = new MessageLog(messageConfig);
 
 **使用指引:**
 
@@ -422,22 +421,22 @@ Log() |发送请求获取短信日志
 **代码示列：**
 
 ```
-      IAppConfig appConfig = new MessageConfig("15484", "047b85b5a7e907397033e360f05690dc",SignType.sha1);
-            MessageLog messageLog = new MessageLog(appConfig);
-            messageLog.AddProject("d5ngn3");
-            messageLog.AddStart_data(setUinxTimeStamp(new DateTime(2017, 8, 20, 1, 10, 10)).ToString());
-            messageLog.AddEnd_data(setUinxTimeStamp(new DateTime(2017, 12, 1, 1, 10, 10)).ToString());
-            string returnMessage = string.Empty;
-             returnMessage=messageLog.Log(out returnMessage);
-                Console.WriteLine("接受的消息"+returnMessage);
-                Console.ReadKey();
-      }    
-        public long  setUinxTimeStamp(DateTime dateTime)
-        {
-              DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));       
-            long timeStamp = (long)(dateTime - startTime).TotalSeconds; // 相差秒数
-            return timeStamp;
-     }
+	IAppConfig appConfig = new MessageConfig("15484", "047b85b5a7e907397033e360f05690dc", SignType.sha1);
+	MessageLog messageLog = new MessageLog(appConfig);
+	messageLog.AddProject("d5ngn3");
+	messageLog.AddStart_data(setUinxTimeStamp(new DateTime(2017, 8, 20, 1, 10, 10)).ToString());
+	messageLog.AddEnd_data(setUinxTimeStamp(new DateTime(2017, 12, 1, 1, 10, 10)).ToString());
+	string returnMessage = string.Empty;
+	returnMessage = messageLog.Log(out returnMessage);
+	Console.WriteLine("接受的消息" + returnMessage);
+	Console.ReadKey();
+	
+	public long  setUinxTimeStamp(DateTime dateTime)
+	{
+		DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));       
+		long timeStamp = (long)(dateTime - startTime).TotalSeconds; // 相差秒数
+		return timeStamp;
+	}
 
 ```
 
@@ -445,7 +444,7 @@ Log() |发送请求获取短信日志
 
 #### AddressBookMessage类
 -  AppConfig appConfig = new MessageConfig("AppId", "AppKey");
-- AddressBookMessage addressbook = new AddressBookMessage(config);
+-  AddressBookMessage addressbook = new AddressBookMessage(config);
 
 
 **使用指引:**
@@ -462,22 +461,24 @@ GetSender()	 | 获取发送方式
 **代码示列：**
 
 ```
-      使用 ADDRESSBOOKMessage 类 发送 addressbook/message/subscribe 请求，添加订阅联系人或向目标地址薄中添加联系人
-     IAppConfig appConfig = new MessageConfig("AppId", "AppKey");
-            AddressBookMessage addressBookMessage = new AddressBookMessage(appConfig);
-            string returnMessage = string.Empty;
-            addressBookMessage.SetAddress("your phone number");
-            if (addressBookMessage.Subscribe(out returnMessage) == false)
-            {
-                Console.WriteLine(returnMessage);
-            }
+	使用 ADDRESSBOOKMessage 类 发送 addressbook/message/subscribe 请求，添加订阅联系人或向目标地址薄中添加联系人
+	IAppConfig appConfig = new MessageConfig("AppId", "AppKey");
+	AddressBookMessage addressBookMessage = new AddressBookMessage(appConfig);
+	string returnMessage = string.Empty;
+	addressBookMessage.SetAddress("your phone number");
+	if (addressBookMessage.Subscribe(out returnMessage) == false)
+	{
+		Console.WriteLine(returnMessage);
+	}
 
 ```
 
 
+---
+
 #### AddressBookMail类
 -  IAppConfig mailConfig = new MailAppConfig("AppID","AppKey");
-- AddressBookMail addressBookMail = new AddressBookMail(mailConfig);
+-  AddressBookMail addressBookMail = new AddressBookMail(mailConfig);
 
 
 **使用指引:**
@@ -494,29 +495,29 @@ GetSender()	 | 获取发送方式
 **代码示列：**
 
 ```
-      使用 ADDRESSBOOKMail 类提交 addressbook/mail/subscribe 请求，添加订阅联系人或向目标地址薄中添加联系人
-            IAppConfig mailConfig = new MailAppConfig("AppID","AppKey");
-            AddressBookMail addressBookMail = new AddressBookMail(mailConfig);
-            addressBookMail.SetAddress("leo12@submail.cn", "leo");
-            addressBookMail.SetAddressBook("61RgC3");
-            string outMessage = string.Empty;
-            bool issuccess = addressBookMail.Subscribe(out outMessage);
-            if (!issuccess)
-            {
-                Console.WriteLine(outMessage);
-            }
+	使用 ADDRESSBOOKMail 类提交 addressbook/mail/subscribe 请求，添加订阅联系人或向目标地址薄中添加联系人
+	IAppConfig mailConfig = new MailAppConfig("AppID","AppKey");
+	AddressBookMail addressBookMail = new AddressBookMail(mailConfig);
+	addressBookMail.SetAddress("leo12@submail.cn", "leo");
+	addressBookMail.SetAddressBook("61RgC3");
+	string outMessage = string.Empty;
+	bool issuccess = addressBookMail.Subscribe(out outMessage);
+	if (!issuccess)
+	{
+		Console.WriteLine(outMessage);
+	}
             
             
-            使用 ADDRESSBOOKMail 类提交 addressbook/mail/unsubscribe 请求
-            IAppConfig mailConfig = new MailAppConfig("AppID","AppKey");
-            AddressBookMail addressBookMail = new AddressBookMail(mailConfig);
-            addressBookMail.SetAddress("leo12@submail.cn", "leo");
-            string outMessage = string.Empty;
-            bool issuccess = addressBookMail.UnSubscribe(out outMessage);
-            if (!issuccess)
-            {
-               Console.WriteLine(outMessage);
-            }
+	使用 ADDRESSBOOKMail 类提交 addressbook/mail/unsubscribe 请求
+	IAppConfig mailConfig = new MailAppConfig("AppID","AppKey");
+	AddressBookMail addressBookMail = new AddressBookMail(mailConfig);
+	addressBookMail.SetAddress("leo12@submail.cn", "leo");
+	string outMessage = string.Empty;
+	bool issuccess = addressBookMail.UnSubscribe(out outMessage);
+	if (!issuccess)
+	{
+		Console.WriteLine(outMessage);
+	}
 
 ```
 
@@ -541,29 +542,30 @@ Send| 发送语音
 **代码示列：**
 
 ```
-           IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
-            VoiceSend voiceSend = new VoiceSend(appConfig);
-            voiceSend.AddTo("telephone_number");
-            voiceSend.AddContent("欢迎来到中国，welcome to china");
-            string returnMessage = string.Empty;
-            if (voiceSend.Send(out returnMessage) == true)
-            {
-                Console.WriteLine("发送成功");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("发送失败");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
+	IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
+	VoiceSend voiceSend = new VoiceSend(appConfig);
+	voiceSend.AddTo("telephone_number");
+	voiceSend.AddContent("欢迎来到中国，welcome to china");
+	string returnMessage = string.Empty;
+	if (voiceSend.Send(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	
 ```
 
 ---
 
 #### VoiceXSend类
--    IAppConfig appConfig = new VoiceAppConfig("AppID","AppKey");
+-  IAppConfig appConfig = new VoiceAppConfig("AppID","AppKey");
 -  VoiceXSend voiceXSend = new VoiceXSend(appConfig);
 
 **使用指引:**
@@ -580,31 +582,32 @@ XSend| 发送语音
 **代码示列：**
 
 ```
-           IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
-            VoiceXSend voiceXSend = new VoiceXSend(appConfig);
-            voiceXSend.AddTo("17602115149");
-            voiceXSend.SetProject("WZlIv3");
-            voiceXSend.AddVar("name", "张杨");
-            voiceXSend.AddVar("place", "江湖大道");
-            string returnMessage = string.Empty;
-            if (voiceXSend.XSend(out returnMessage) == true)
-            {
-                Console.WriteLine("发送成功");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("发送失败");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
+	IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
+	VoiceXSend voiceXSend = new VoiceXSend(appConfig);
+	voiceXSend.AddTo("17602115149");
+	voiceXSend.SetProject("WZlIv3");
+	voiceXSend.AddVar("name", "张杨");
+	voiceXSend.AddVar("place", "江湖大道");
+	string returnMessage = string.Empty;
+	if (voiceXSend.XSend(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	
 ```
 
 ---
 
 #### VoiceMultiXSend类
--    IAppConfig appConfig = new VoiceAppConfig("AppID","AppKey");
+-  IAppConfig appConfig = new VoiceAppConfig("AppID","AppKey");
 -  VoiceMultiXSend voiceMultiXSend = new VoiceMultiXSend(appConfig);
 
 **使用指引:**
@@ -620,34 +623,35 @@ MultiXSend| 群发语音
 **代码示列：**
 
 ```
-           IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
-            VoiceMultiXSend voiceMultiXSend = new VoiceMultiXSend(appConfig);
-            voiceMultiXSend.SetProject("WZlIv3");
+	IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
+	VoiceMultiXSend voiceMultiXSend = new VoiceMultiXSend(appConfig);
+	voiceMultiXSend.SetProject("WZlIv3");
 
-            Dictionary<string, string> vars = new Dictionary<string, string>();
-            vars.Add("place", "上海");
-            vars.Add("name", "张三");
+	Dictionary<string, string> vars = new Dictionary<string, string>();
+	vars.Add("place", "上海");
+	vars.Add("name", "张三");
 
-            Dictionary<string, string> vars2 = new Dictionary<string, string>();
-            vars2.Add("place", "北京");
-            vars2.Add("name", "老江");
+	Dictionary<string, string> vars2 = new Dictionary<string, string>();
+	vars2.Add("place", "北京");
+	vars2.Add("name", "老江");
 
-            voiceMultiXSend.SetMulti(new List<MultiMessageItem>() {
-                new MultiMessageItem() { to="1760115149", vars = vars},
-                new MultiMessageItem() { to="1331155482", vars = vars2},
-            });
+	voiceMultiXSend.SetMulti(new List<MultiMessageItem>() {
+		new MultiMessageItem() { to="1760115149", vars = vars},
+		new MultiMessageItem() { to="1331155482", vars = vars2},
+	});
 
-            string returnMessage = string.Empty;
-            if (voiceMultiXSend.MultiXSend(out returnMessage) == false)
-            {
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
+	string returnMessage = string.Empty;
+	if (voiceMultiXSend.MultiXSend(out returnMessage) == false)
+	{
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	
 ```
 
 ---
 #### VoiceVerify类
--    IAppConfig appConfig = new VoiceAppConfig("AppID","AppKey");
+-  IAppConfig appConfig = new VoiceAppConfig("AppID","AppKey");
 -  VoiceMultiXSend voiceMultiXSend = new VoiceMultiXSend(appConfig);
 
 **使用指引:**
@@ -663,29 +667,30 @@ Verify（）| 发送语音验证码
 **代码示列：**
 
 ```
-          IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
-            VoiceVerify voiceVerify = new VoiceVerify(appConfig);
-            voiceVerify.AddTo("telephone_number");
-            voiceVerify.SetCode("38381438");
-            string returnMessage = string.Empty;
-            if (voiceVerify.Verify(out returnMessage) == true)
-            {
-                Console.WriteLine("发送成功");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("发送失败");
-                Console.WriteLine(returnMessage);
-                Console.ReadKey();
-            }
+	IAppConfig appConfig = new VoiceAppConfig("appid", "appkey");
+	VoiceVerify voiceVerify = new VoiceVerify(appConfig);
+	voiceVerify.AddTo("telephone_number");
+	voiceVerify.SetCode("38381438");
+	string returnMessage = string.Empty;
+	if (voiceVerify.Verify(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	
 ```
 
 ---
 
 #### InternationalSmsSend类
--    IAppConfig appConfig = new InternationalSmsConfig("AppID","AppKey");
+-  IAppConfig appConfig = new InternationalSmsConfig("AppID","AppKey");
 -  InternationalSmsSend internationalSmsSend = new InternationalSmsSend(appConfig);
 
 **使用指引:**
@@ -701,28 +706,30 @@ Send（）| 发送短信
 **代码示列：**
 
 ```
-            IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
-			InternationalSmsSend internationalSmsSend = new InternationalSmsSend(appConfig);
-			internationalSmsSend.AddTo("+14375375616");
-			internationalSmsSend.AddContent("【SUBMAIL】你好，你的验证码是：38385");
-			string returnMessage = string.Empty;
-			if (internationalSmsSend.Send(out returnMessage) == true)
-			{
-				Console.WriteLine("发送成功");
-				Console.WriteLine(returnMessage);
-				Console.ReadKey();
-			}
-			else
-			{
-				Console.WriteLine("发送失败");
-				Console.WriteLine(returnMessage);
-				Console.ReadKey();
-			}
+	IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
+	InternationalSmsSend internationalSmsSend = new InternationalSmsSend(appConfig);
+	internationalSmsSend.AddTo("+14375375616");
+	internationalSmsSend.AddContent("【SUBMAIL】你好，你的验证码是：38385");
+	string returnMessage = string.Empty;
+	if (internationalSmsSend.Send(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	
 ```
+
 ---
 
 #### InternationalSmsXSend类
--    AppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
+-  AppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
 -  InternationalSmsXSend smsXSend = new InternationalSmsXSend(appConfig);
 
 **使用指引:**
@@ -739,31 +746,32 @@ XSend（）| 发送短信
 **代码示列：**
 
 ```
-            IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
-			InternationalSmsXSend smsXSend = new InternationalSmsXSend(appConfig);
-			smsXSend.AddTo("+14375375616");
-			smsXSend.SetProject("w3nla3");
-			smsXSend.AddVar("code", "1111333");
-			smsXSend.AddVar("minue", "2");
-			string returnMessage = string.Empty;
-			if (smsXSend.XSend(out returnMessage) == true)
-			{
-				Console.WriteLine("发送成功");
-				Console.WriteLine(returnMessage);
-				Console.ReadKey();
-			}
-			else
-			{
-				Console.WriteLine("发送失败");
-				Console.WriteLine(returnMessage);
-				Console.ReadKey();
-			}
+	IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
+	InternationalSmsXSend smsXSend = new InternationalSmsXSend(appConfig);
+	smsXSend.AddTo("+14375375616");
+	smsXSend.SetProject("w3nla3");
+	smsXSend.AddVar("code", "1111333");
+	smsXSend.AddVar("minue", "2");
+	string returnMessage = string.Empty;
+	if (smsXSend.XSend(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	
 ```
 
 ---
 
 #### InternationalSmsMultiXSend类
--    IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey");
+-  IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey");
 -  InternationalSmsXSend smsXSend = new InternationalSmsXSend(appConfig);
 
 **使用指引:**
@@ -779,33 +787,35 @@ MultiXSend（）| 发送短信
 **代码示列：**
 
 ```
-           IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
-			InternationalSmsMultiXSend smsMultiXSend = new InternationalSmsMultiXSend(appConfig);
-			smsMultiXSend.SetProject("w3nla3");
+	IAppConfig appConfig = new InternationalSmsConfig("appid", "appkey", SignType.normal);
+	InternationalSmsMultiXSend smsMultiXSend = new InternationalSmsMultiXSend(appConfig);
+	smsMultiXSend.SetProject("w3nla3");
 
-			Dictionary<string, string> vars = new Dictionary<string, string>();
-			vars.Add("code", "11122233");
-			vars.Add("minue", "18");
-			smsMultiXSend.SetMulti(new List<MultiMessageItem>() {
-				new MultiMessageItem() { to="+14375375616",vars=vars},
-				new MultiMessageItem() { to="+17828203943", vars = vars}
-			});
+	Dictionary<string, string> vars = new Dictionary<string, string>();
+	vars.Add("code", "11122233");
+	vars.Add("minue", "18");
+	smsMultiXSend.SetMulti(new List<MultiMessageItem>() {
+		new MultiMessageItem() { to="+14375375616",vars=vars},
+		new MultiMessageItem() { to="+17828203943", vars = vars}
+	});
 
-			string returnMessage = string.Empty;
+	string returnMessage = string.Empty;
 
-			if (smsMultiXSend.MultiXSend(out returnMessage) == true)
-			{
-				Console.WriteLine("发送成功");
-				Console.WriteLine(returnMessage);
-				Console.ReadKey();
-			}
-			else
-			{
-				Console.WriteLine("发送失败");
-				Console.WriteLine(returnMessage);
-				Console.ReadKey();
-			}
+	if (smsMultiXSend.MultiXSend(out returnMessage) == true)
+	{
+		Console.WriteLine("发送成功");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
+	else
+	{
+		Console.WriteLine("发送失败");
+		Console.WriteLine(returnMessage);
+		Console.ReadKey();
+	}
 ```
+
+---
 
 具体参数参数传入请参考我们的开发文档[：https://www.mysubmail.com/chs/documents/developer/index]()
 
