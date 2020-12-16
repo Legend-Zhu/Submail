@@ -71,7 +71,7 @@
 ##### SDK CLASS索引
 	    
 ```
-        AddressBookMail.cs     邮件地址薄，订阅和添加联系人到目标地薄 
+		AddressBookMail.cs     邮件地址薄，订阅和添加联系人到目标地薄 
 		AddressBookMessage.cs  短信地址薄，订阅和添加联系人到目标地薄
 		ISender.cs		   	   发送接口	
 		SendBase.cs		       Message Send 和Mail Send的基类
